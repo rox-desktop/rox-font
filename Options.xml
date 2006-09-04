@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<options>
+	<section title='Font'>
+	  <label help='1'>On newer systems, you can install fonts by dragging them into your ~/.fonts directory.</label>
+	  <hbox>
+	  <vbox>
+	  <frame label='Default Fonts'>
+	  <font name='Gtk/FontName' label='Application font:' size-group='default_fonts'>The font used by Gtk+-2.0 applications</font>
+	  <font name='ROX/DesktopFont' label='Desktop font:' size-group='default_fonts'>The font used for pinboard and panel items
+(not yet implemented)</font>
+	  <font name='ROX/WindowTitleFont' label='Window title font:' size-group='default_fonts'>(not yet implemented)</font>
+	  <font name='ROX/MonospaceFontName' label='Terminal font:' size-group='default_fonts'>Set the monospace font for terminals and similar applications</font>
+	  </frame>
+	  </vbox>
+	  <vbox>
+	  <frame label='Resolution'>
+			  <numentry   unit='dots per inch' min='50' max='228' name='ROX/DPI'>Resolution used for converting font sizes to pixel sizes</numentry>
+
+	  </frame>
+	  </vbox>
+	 </hbox>
+
+	 <hbox>
+	 <vbox>
+	  <frame label='Smoothing'>
+	  <radio-group name='Xft/Antialias'> 
+	  <hbox>
+			  <radio value='0' type='int' label='None'>No font antialiasing</radio>
+			  <radio value='1' type='int' label='CRT'>Optimize for CRT monitor</radio>
+	  </hbox>
+	  <hbox>
+			  <radio value='2' type='int' label='LCD'>Optimize for LCD flatpanel</radio>
+	  </hbox>
+	 </radio-group>
+	 </frame>
+	 </vbox>
+	  <vbox>
+	  <frame label='Hinting'>
+			  <radio-group name='Xft/Hinting'>
+	  <hbox>
+			  <radio value='0' type='int' label='None'></radio>
+			  <radio value='1' type='int' label='Slight'></radio>
+	  </hbox>
+	  <hbox>
+			  <radio value='2' type='int' label='Medium'></radio>
+			  <radio value='3' type='int' label='Full'></radio>
+	  </hbox>
+	 </radio-group>
+	 </frame>
+	 </vbox>
+	 <vbox>
+	  <frame label='Subpixel order (LCD only)'>
+	  <radio-group name='Xft/RGBA'> 
+	  <hbox>
+			  <radio value='rgb' label='RGB'>Most common</radio>
+			  <radio value='bgr' label='BGR'></radio>
+	  </hbox>
+	  <hbox>
+			  <radio value='vrgb' label='VRGB'></radio>
+			  <radio value='vbgr' label='VBGR'></radio>
+	  </hbox>
+	 </radio-group>
+	 </frame>
+	 </vbox>
+	 </hbox>
+  </section>
+</options>

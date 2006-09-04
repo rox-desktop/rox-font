@@ -1,0 +1,26 @@
+			Configure/Font
+			Choose default fonts and fine-tune font rendering
+			by Guido Schimmels
+
+
+06-Oct-2005
+~~~~~~~~~~~
+
+(Version 0.9.1)
+
+Modified to support more consistent new naming convention in settings.py
+(Tony Houghton).
+
+04-Oct-2005
+~~~~~~~~~~~
+
+(Version 0.9)
+
+New generic settings.py, compatible with dbus 0.36 bindings (Tony Houghton).
+
+02-May-2004
+~~~~~~~~~~~
+
+(Version 0.8)
+Created a first, fully functional version.
+
