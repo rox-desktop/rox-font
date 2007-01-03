@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<interface xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+  <name>Font</name>
+  <summary>Font configuration tool</summary>
+  <description>
+Font lets you choose application default fonts and fine-tune font-rendering.
+It's a replacement for the gnome-font-properties capplet from the Gnome
+Control-Center, to be used from within ROX-Session.
+  </description>
+
+  <icon href='http://rox.sourceforge.net/Icons/Font.png' type='image/png'/>
+  <feed-for interface="http://rox.sourceforge.net/2007/interfaces/Font"/>
+  
+  <group main='AppRun'>
+    <requires interface="http://rox.sourceforge.net/2005/interfaces/ROX-Lib">
+      <environment insert="ROX-Lib2/python" name="PYTHONPATH"/>
+    </requires>
+    <implementation id="." version="0.9.1" version-modifier='-post'/>
+  </group>
+</interface>
