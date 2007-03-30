@@ -18,12 +18,35 @@ rgb_order_options = [ 'rgb', 'bgr', 'vrgb', 'vbgr' ]
 settings = Settings()
 
 class FontSetting(Setting):
-	def __init__(self, name, default, gconf_key = None):
-		if name.find('Font') != -1:
-			garbage = True
+	def __init__(self, name, default, gconf_key = None, gconf_vals = None,
+			gconf_float = False):
+		#if name.find('Font') != -1:
+		#	garbage = True
+		#else:
+		#	garbage = False
+		self.gconf_vals = gconf_vals
+		self.gconf_float = gconf_float
+		Setting.__init__(self, name, default, settings, False, gconf_key)
+	
+	def make_gconf_value(self):
+		if self.gconf_vals:
+			return self.gconf_vals[self.int_value]
 		else:
-			garbage = False
-		Setting.__init__(self, name, default, settings, garbage, gconf_key)
+			return Setting.make_gconf_value(self)
+	
+	def _set(self, value, notify = True):
+		if self.gconf_float:
+			# Trick ROX-Lib into not doing gconf set because it can't handle
+			# floats
+			gconf_key = self.gconf_key
+			self.gconf_key = None
+		Setting._set(self, value, notify)
+		if self.gconf_float:
+			self.gconf_key = gconf_key
+			if not self.settings.client:
+					self.settings.client = rox.settings.get_gconf()
+			if self.settings.client:
+				self.settings.client.set_float(gconf_key, float(self.value))
 
 class DPISetting(FontSetting):
 	def post_notify_hook(self):
@@ -33,9 +56,9 @@ FontSetting('Gtk/FontName', "Sans 10", "font_name")
 FontSetting('ROX/DesktopFont', "Sans 10")
 FontSetting('ROX/WindowTitleFont', "Sans 10")
 FontSetting('ROX/MonospaceFontName', "Monospace 10", "monospace_font_name")
-DPISetting('ROX/DPI', 90, FONT_DPI_KEY)
-FontSetting('Xft/Antialias', 1, FONT_ANTIALIASING_KEY)
-FontSetting('Xft/Hinting', 1, FONT_HINTING_KEY)
+DPISetting('ROX/DPI', 90, FONT_DPI_KEY, None, True)
+FontSetting('Xft/Antialias', 1, FONT_ANTIALIASING_KEY, antialias_options)
+FontSetting('Xft/Hinting', 1, FONT_HINTING_KEY, font_hint_options)
 #FontSetting('Xft/HintStyle', 1)
 FontSetting('Xft/RGBA', "rgb", FONT_RGBA_ORDER_KEY)
 
