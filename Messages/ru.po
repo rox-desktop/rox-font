@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Font 0.9.1\n"
+"POT-Creation-Date: 2007-07-14 16:34+BST\n"
+"PO-Revision-Date: 2007-07-14 03:33+EEST\n"
+"Last-Translator: Konstantin Korikov <lostclus@ua.fm>\n"
+"Language-Team: Russian <RU@ru.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.1\n"
+
+#: tips:1
+msgid "Font"
+msgstr "Шрифт"
+
+#: tips:2
+msgid ""
+"On newer systems, you can install fonts by dragging them into your ~/.fonts "
+"directory."
+msgstr ""
+"В новых системах вы можете устанавливать шрифты перемещая их в каталог~/."
+"fonts"
+
+#: tips:3
+msgid "Default Fonts"
+msgstr "Шрифты по умолчанию"
+
+#: tips:4
+msgid "Application font:"
+msgstr "Шрифт приложения:"
+
+#: tips:5
+msgid "The font used by Gtk+-2.0 applications"
+msgstr "Шрифт, используемый приложениями Gtk-2.0"
+
+#: tips:6
+msgid "Desktop font:"
+msgstr "Шрифт рабочего стола:"
+
+#: tips:7
+msgid ""
+"The font used for pinboard and panel items\n"
+"(not yet implemented)"
+msgstr ""
+"Шрифт, используемый в элементах витрины и панели\n"
+"(еще не реализовано)"
+
+#: tips:8
+msgid "Window title font:"
+msgstr "Шрифт заголовка окна:"
+
+#: tips:9
+msgid "(not yet implemented)"
+msgstr "(еще не реализовано)"
+
+#: tips:10
+msgid "Terminal font:"
+msgstr "Шрифт терминала:"
+
+#: tips:11 tips:12 tips:13
+msgid "Set the monospace font for terminals and similar applications"
+msgstr ""
+"Для терминалов и подобных приложений установите шрифт фиксированной ширины"
+
+#: tips:14
+msgid "Resolution"
+msgstr "Разрешение"
+
+#: tips:15
+msgid "dots per inch"
+msgstr "точек на дюйм (dpi)"
+
+#: tips:16 tips:17 tips:18 tips:19
+msgid "Resolution used for converting font sizes to pixel sizes"
+msgstr "Разрешение, используемое для определения размера шрифта в пикселах"
+
+#: tips:20
+msgid "Smoothing"
+msgstr "Сглаживание"
+
+#: tips:21 tips:33
+msgid "None"
+msgstr "Нет"
+
+#: tips:22
+msgid "No font antialiasing"
+msgstr "Без сглаживания шрифтов"
+
+#: tips:23
+msgid "CRT"
+msgstr ""
+
+#: tips:24 tips:25
+msgid "Optimize for CRT monitor"
+msgstr ""
+
+#: tips:26
+msgid "LCD"
+msgstr ""
+
+#: tips:27 tips:28 tips:29 tips:30 tips:31
+msgid "Optimize for LCD flatpanel"
+msgstr ""
+
+#: tips:32
+msgid "Hinting"
+msgstr "Уточнение"
+
+#: tips:34
+msgid "Slight"
+msgstr "Слабое"
+
+#: tips:35
+msgid "Medium"
+msgstr "Среднее"
+
+#: tips:36
+msgid "Full"
+msgstr "Полное"
+
+#: tips:37
+#, fuzzy
+msgid "Subpixel order (LCD only)"
+msgstr "Субпиксельное сглаживание"
+
+#: tips:38
+msgid "RGB"
+msgstr "RGB"
+
+#: tips:39
+msgid "Most common"
+msgstr "Наиболее общий"
+
+#: tips:40
+msgid "BGR"
+msgstr "BGR"
+
+#: tips:41
+msgid "VRGB"
+msgstr "VRGB"
+
+#: tips:42
+msgid "VBGR"
+msgstr "VBGR"
+
+#~ msgid "Off"
+#~ msgstr "Выключено"
+
+#~ msgid "On"
+#~ msgstr "Включено"
+
+#~ msgid "Enable font antialiasing"
+#~ msgstr "Включить сглаживания шрифтов"
+
+#~ msgid "For CRTs"
+#~ msgstr "Для ЭЛТ"

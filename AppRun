@@ -6,6 +6,8 @@ import rox
 from rox.settings import Setting, Settings
 from rox.OptionsBox import OptionsBox
 
+__builtins__._ = rox.i18n.translation(os.path.join(rox.app_dir, 'Messages'))
+
 FONT_ANTIALIASING_KEY = "/desktop/gnome/font_rendering/antialiasing"
 FONT_HINTING_KEY =	"/desktop/gnome/font_rendering/hinting"
 FONT_RGBA_ORDER_KEY =	"/desktop/gnome/font_rendering/rgba_order"
