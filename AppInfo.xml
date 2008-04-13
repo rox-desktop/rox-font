@@ -6,7 +6,7 @@ and fine-tune font-rendering</Summary>
 und Feineinstellungen zur Schriftdarstellung</Summary>
 	<About xml:lang="en">
 		<Purpose>Font Settings</Purpose>
-		<Version>0.9.1</Version>
+		<Version>0.9.2</Version>
 		<Authors>Guido Schimmels &lt;__guido__@web.de&gt;
 		  Tony Houghton &lt;h@realh.co.uk&gt;</Authors>
 		<License>GPL</License>
